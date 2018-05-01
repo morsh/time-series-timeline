@@ -11,3 +11,15 @@ Production:
 ```sh
 npm install
 ```
+
+# Run
+
+Dev:
+```sh
+npm start:dev
+```
+
+Production:
+```sh
+npm start
+```
