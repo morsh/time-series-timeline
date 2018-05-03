@@ -45,6 +45,8 @@ export default class TimelineView extends React.Component<IProps> {
           defaultTimeStart={moment().add(-12, 'hour')}
           defaultTimeEnd={moment().add(12, 'hour')}
 
+          onItemSelect={(itemId: number) => this.dataStore.selectItem(itemId)}
+
           resizeDetector={containerResizeDetector}
           sidebarWidth={clientWidth < 800 ? 160 : 300}
           headerLabelGroupHeight={clientWidth < 800 ? 80 : undefined}
