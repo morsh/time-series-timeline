@@ -2,7 +2,7 @@ import { ITodo } from './Interfaces';
 
 export class TodoApi {
   
-  async getTodo(): Promise<ITodo[]> {
+  async getTodos(): Promise<ITodo[]> {
      
     await this.timeout(5000);
 

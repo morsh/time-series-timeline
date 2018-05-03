@@ -31,7 +31,7 @@ export class TodoStore {
       finished: false
     });
 
-    const todos = await this.api.getTodo();
+    const todos = await this.api.getTodos();
     todos.push.apply(todos, this.todos);
     this.todos = todos;
   }
