@@ -4,9 +4,9 @@
   "private": true,
   "proxy": "http://localhost:4000/",
   "dependencies": {
-    "alt": "^0.18.6",
-    "alt-utils": "^2.0.0",
     "interact.js": "^1.2.8",
+    "mobx": "^4.2.0",
+    "mobx-react": "^5.1.2",
     "moment": "^2.22.1",
     "node-sass": "^4.9.0",
     "npm-run-all": "^4.1.2",
@@ -32,7 +32,6 @@
     "test": "react-scripts-ts test --env=jsdom"
   },
   "devDependencies": {
-    "@types/alt": "^0.16.35",
     "@types/jest": "^22.2.3",
     "@types/lodash": "^4.14.55",
     "@types/node": "^8.10.11",

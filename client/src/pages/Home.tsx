@@ -2,11 +2,7 @@ import * as React from 'react';
 import * as moment from 'moment';
 import Timeline from 'react-calendar-timeline/lib';
 import containerResizeDetector from 'react-calendar-timeline/lib/resize-detector/container';
-import { Toolbar } from 'react-md';
-import Nav from './common/Nav';
-import KebabMenu from './common/KebabMenu';
-// import TitleMenu from './common/TitleMenu';
-import DocumentMenus from './common/DocumentMenus';
+import TodoListView from '../components/TodoListView';
 
 import './timeline.css';
 
@@ -33,14 +29,7 @@ export default class Home extends React.Component {
 
     return (
       <div className="home">
-        <p className="home-intro">
-          <Toolbar
-            colored={true}
-            nav={<Nav />}
-            actions={<KebabMenu id="toolbar-title-menu-kebab" />}
-          >
-            <DocumentMenus />
-          </Toolbar>
+        <div className="home-intro">
           <Timeline 
               groups={types}
               items={items}
@@ -52,7 +41,9 @@ export default class Home extends React.Component {
               sidebarWidth={clientWidth < 800 ? 160 : 300}
               headerLabelGroupHeight={clientWidth < 800 ? 80 : undefined}
           />
-        </p>
+
+          <TodoListView name="Mor" />
+        </div>
       </div>
     );
   }
