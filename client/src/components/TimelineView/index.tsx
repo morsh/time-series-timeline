@@ -27,8 +27,8 @@ export default class TimelineView extends React.Component<IProps> {
 
     return (
       <Timeline 
-          groups={this.dataStore.types}
-          items={this.dataStore.items}
+          groups={this.dataStore.displayTypes}
+          items={this.dataStore.displayItems}
           keys={{ 
             groupIdKey: 'id',
             groupTitleKey: 'title',

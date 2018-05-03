@@ -10,7 +10,7 @@ export class Api {
   
   async load(): Promise<IApiResult> {
      
-    await this.timeout(3000);
+    await this.timeout(1000);
 
     const types = [
       {id: 1, title: 'group 1'},
