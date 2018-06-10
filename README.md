@@ -1,5 +1,8 @@
 # Time Series Timeline
 
+A simple web application to enable using VSTS for repoting activities on projects and organizations.
+![/docs/timeline.png](/docs/timeline.png)
+
 # Install
 
 Dev:
